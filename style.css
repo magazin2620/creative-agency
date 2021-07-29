@@ -10,7 +10,6 @@ a, body, footer, form, h1, h2, h3, h4, h5, h6, header, html, img, label, nav, ol
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 article, aside, footer, header, nav, section {
@@ -26,7 +25,6 @@ ol, ul {
   box-sizing: border-box; }
 
 body {
-  font-family: Exo,sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #000;
