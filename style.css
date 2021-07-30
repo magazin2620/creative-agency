@@ -1,5 +1,4 @@
 @font-face {
-  font-display: swap;
   font-family: Felix;
   src: url(fonts/felix.woff2) format("woff2"), url(fonts/felix.woff) format("woff");
   font-weight: 400;
@@ -25,6 +24,7 @@ ol, ul {
   box-sizing: border-box; }
 
 body {
+  font-family: Felix, serif;
   font-size: 20px;
   line-height: 36px;
   color: #000;
@@ -1539,7 +1539,7 @@ body.loaded {
   .intro-homepage .intro-title-wrapper .horizontal-content {
     padding-bottom: 10px; } }
 
-.intro-homepage .intro-title-wrapper .horizontal-content .horizontal-text {
+.horizontal-content .horizontal-text {
   display: inline-block;
   position: relative;
   font-family: Exo,sans-serif;
