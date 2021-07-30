@@ -2728,12 +2728,22 @@ body.loaded{
 }
 
 .project-item {
-	width: 100%;
 	text-decoration: none;
 	min-height: 450px;
 	display: flex;
 	align-items: flex-end;
-	
+}
+
+@media (max-width:900px){
+	.project-item {
+		min-height: 350px;
+	}
+}
+
+@media (max-width:400px){
+	.project-item {
+		min-height: 300px;
+	}
 }
 
 .project-item:hover .project-title {
@@ -2750,6 +2760,18 @@ body.loaded{
 	z-index: 9;
 	filter: grayscale(100%);
 	transition: filter .5s cubic-bezier(.4,0,.2,1),transform .5s cubic-bezier(.4,0,.2,1);
+}
+
+@media (max-width:900px){
+	.project-image {
+		height: 70%;
+	}
+}
+
+@media (max-width:400px){
+	.project-image {
+		height: 80%;
+	}
 }
 
 .project-item:hover .project-image {
