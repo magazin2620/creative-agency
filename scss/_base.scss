@@ -9,25 +9,28 @@ body{
 	background-color:#e5e5e5;
 	overflow-x:hidden;
 	position:relative;
-	display:block
-}
-body:not(.loaded){
-	opacity:0;
-	visibility:hidden;
-	backface-visibility:hidden
-}
-body.loaded{
-	transition:opacity .8s ease,visibility .8s ease;
-	opacity:1;
-	visibility:visible
+	display:block;
+
+	&.loaded{
+		transition:opacity .8s ease,visibility .8s ease;
+		opacity:1;
+		visibility:visible;
+	}
+	
+	&:not(.loaded){
+		opacity:0;
+		visibility:hidden;
+		backface-visibility:hidden
+	}
 }
 .container{
-	max-width:1440px
-}
-.container,.container-fluid{
-	width:100%;
-	padding-right:15px;
-	padding-left:15px;
-	margin-right:auto;
-	margin-left:auto
+	max-width:1440px;
+
+	&,&-fluid{
+		width:100%;
+		padding-right:15px;
+		padding-left:15px;
+		margin-right:auto;
+		margin-left:auto
+	}
 }

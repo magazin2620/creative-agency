@@ -10,9 +10,9 @@
 	z-index:1000
 }
 @media screen and (max-width:991px){
-	.page-header{width:50px}
+	&{width:50px}
 }
-.page-header .left-sidebar-line{
+& .left-sidebar-line{
 	position:fixed;
 	width:90px;
 	height:100%;
@@ -23,11 +23,11 @@
 	background-color:#e5e5e5
 }
 @media screen and (max-width:991px){
-	.page-header .left-sidebar-line{
+	& .left-sidebar-line{
 		width:50px
 	}
 }
-.page-header .left-sidebar{
+& .left-sidebar{
 	position:fixed;
 	width:90px;
 	height:100%;
@@ -36,11 +36,11 @@
 	z-index:100
 }
 @media screen and (max-width:991px){
-	.page-header .left-sidebar{
+	& .left-sidebar{
 		width:50px
 	}
 }
-.page-header .left-sidebar .header-dots{
+& .left-sidebar .header-dots{
 	position:absolute;
 	display:block;
 	top:0;
@@ -51,17 +51,17 @@
 	background-color:#000
 }
 @media screen and (max-height:450px){
-	.page-header .left-sidebar .header-dots{
+	& .left-sidebar .header-dots{
 		height:70px
 	}
 }
 @media screen and (max-width:991px){
-	.page-header .left-sidebar .header-dots{
+	& .left-sidebar .header-dots{
 		width:50px;
 		height:50px
 	}
 }
-.page-header .left-sidebar .header-dots img{
+& .left-sidebar .header-dots img{
 	position:absolute;
 	left:50%;
 	top:50%;-webkit-transform:translate(-50%,-50%);
@@ -69,35 +69,35 @@
 	height:32px
 }
 @media screen and (max-width:991px){
-	.page-header .left-sidebar .header-dots img{
+	& .left-sidebar .header-dots img{
 		width:18px;
 		height:25px
 	}
 }
-.page-header .left-sidebar .header-social{
+& .left-sidebar .header-social{
 	position:absolute;
 	left:50%;
 	top:50%;-webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);z-index:10
 }
 @media screen and (max-width:991px){
-	.page-header .left-sidebar .header-social{
+	& .left-sidebar .header-social{
 		top:unset;-webkit-transform:translate(-50%);
 		transform:translate(-50%);bottom:30px
 	}
 }
-.page-header .left-sidebar .header-social li{
+& .left-sidebar .header-social li{
 	display:block;
 	text-align:center
 }
-.page-header .left-sidebar .header-social li:last-of-type a{
+& .left-sidebar .header-social li:last-of-type a{
 	padding:0
 }
-.page-header .left-sidebar .header-social li a{
+& .left-sidebar .header-social li a{
 	display:block;padding-bottom:30px
 }
 @media screen and (max-height:450px){
-	.page-header .left-sidebar .header-social li a{
+	& .left-sidebar .header-social li a{
 		padding-bottom:20px
 	}
 }
