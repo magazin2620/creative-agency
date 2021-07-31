@@ -1,0 +1,119 @@
+/*Mobile menu*/
+
+.mobile-menu{
+	display:none;
+	width:calc(100% - 50px);
+	height:calc(100vh - 50px);
+	opacity:0;
+	visibility:hidden;
+	position:fixed;
+	top:50px;
+	left:50px;
+	background:#000;
+	transition:all .5s ease;
+	z-index:250
+}
+@media screen and (max-width:991px){
+	.mobile-menu{
+		display:block
+	}
+}
+.mobile-menu .inner{
+	position:relative;
+	height:100%
+}
+.mobile-menu .menu-wrapper{
+	width:100%;
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translateY(-50%);
+	margin-top:0;
+	text-align:center
+}
+.mobile-menu .menu-wrapper ul li{
+	padding-bottom:20px
+}
+@media screen and (max-height:350px){
+	.mobile-menu .menu-wrapper ul li{
+		padding-bottom:10px
+	}
+}
+.mobile-menu .menu-wrapper ul li a{
+	font-family:Felix,sans-serif;
+	color:#fff;
+	font-weight:400;
+	font-size:36px;
+	line-height:48px;
+	text-decoration:none;
+	position:relative
+}
+@media screen and (max-width:575px){
+	.mobile-menu .menu-wrapper ul li a{
+		font-size:24px;
+		line-height:32px
+	}
+}
+@media screen and (max-height:550px){
+	.mobile-menu .menu-wrapper ul li a{
+		font-size:24px;
+		line-height:32px
+	}
+}
+@media screen and (max-height:350px){
+	.mobile-menu .menu-wrapper ul li a{
+		font-size:16px;
+		line-height:24px
+	}
+}
+.mobile-menu .menu-wrapper ul li a:after{
+	content:"";
+	background-color:#fff;
+	width:0;
+	height:2px;
+	position:absolute;
+	bottom:-2px;
+	left:0;
+	transition:width .5s cubic-bezier(.65,.05,.36,1)
+}
+.mobile-menu .menu-wrapper ul li a:hover:after{
+	width:100%
+}
+.menu-active .mobile-menu{
+	visibility:visible;
+	opacity:1
+}
+.mobile-menu ul li{
+	transition:transform 1s ease,opacity 1.5s ease;
+	transform:translateX(-100px);
+	opacity:0;
+	transition-delay:.4s
+}
+@media screen and (max-width:500px){
+	.mobile-menu ul li{
+		transform:translateX(-70px)
+	}
+}
+.menu-active .mobile-menu .inner ul li{
+	transform:translateX(0);
+	opacity:1
+}
+.menu-active .mobile-menu .inner ul li:nth-child(0){
+	transition-delay:.2s
+}
+.menu-active .mobile-menu .inner ul li:first-child{
+	transition-delay:.3s
+}
+.menu-active .mobile-menu .inner ul li:nth-child(2){
+	transition-delay:.4s
+}
+.menu-active .mobile-menu .inner ul li:nth-child(3){
+	transition-delay:.5s
+}
+.menu-active .mobile-menu .inner ul li:nth-child(4){
+	transition-delay:.6s
+}
+.menu-active .mobile-menu .inner ul li:nth-child(5){
+	transition-delay:.7s
+}
+

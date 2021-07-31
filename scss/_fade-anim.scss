@@ -1,0 +1,22 @@
+/*Fade-anim*/
+
+.fade-up{
+	opacity:0;
+	transition:opacity .8s cubic-bezier(.7,0,.3,1),transform .8s cubic-bezier(.7,0,.3,1);
+	transform:translate3d(0,30%,0);
+	backface-visibility:hidden
+}
+.fade-up.animated{
+	opacity:1;
+	transform:translateZ(0)
+}
+.fade-anim-left{
+	transition:opacity .8s cubic-bezier(.7,0,.3,1),transform .8s cubic-bezier(.7,0,.3,1);
+	transform:translate3d(-10%,0,0);
+	opacity:0;
+	backface-visibility:hidden
+}
+.fade-anim-left.animated{
+	transform:translateZ(0);
+	opacity:1
+}

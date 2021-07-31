@@ -1,0 +1,33 @@
+/*Base*/
+
+body{
+	font-family:Exo, sans-serif;
+	font-size:20px;
+	line-height:36px;
+	color:#000;
+	font-weight:400;
+	background-color:#e5e5e5;
+	overflow-x:hidden;
+	position:relative;
+	display:block
+}
+body:not(.loaded){
+	opacity:0;
+	visibility:hidden;
+	backface-visibility:hidden
+}
+body.loaded{
+	transition:opacity .8s ease,visibility .8s ease;
+	opacity:1;
+	visibility:visible
+}
+.container{
+	max-width:1440px
+}
+.container,.container-fluid{
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}

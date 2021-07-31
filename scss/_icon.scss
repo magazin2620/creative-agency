@@ -1,0 +1,56 @@
+/*Icon*/
+
+.obj-fit-cover{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:50%
+}
+.obj-fit-cover>img{
+	visibility:hidden!important;
+	opacity:0!important;
+	display:block;
+	width:100%;
+	height:100%
+}
+.site-content{
+	position:relative;
+	overflow:hidden
+}
+.page-wrapper{
+	padding-left:90px
+}
+@media screen and (max-width:991px){
+	.page-wrapper{
+		padding-left:50px
+	}
+}
+.facebook-icon,.instagram-icon,.linkedin-icon,.twitter-icon,.whatsapp-icon,.youtube-icon{
+	position:relative;
+	display:block;
+	fill:#000;
+	-webkit-transition:fill .5s cubic-bezier(.4,0,.2,1);
+	transition:fill .5s cubic-bezier(.4,0,.2,1)
+}
+.facebook-icon:hover,.instagram-icon:hover,.linkedin-icon:hover,.twitter-icon:hover,.whatsapp-icon:hover,.youtube-icon:hover{
+	fill:#FFA500
+}
+.facebook-icon, .instagram-icon, .linkedin-icon, .whatsapp-icon{
+	width:16px;
+	height:16px
+}
+.twitter-icon{
+	width:16px;
+	height:13px
+}
+.youtube-icon{
+	width:16px;
+	height:12px
+}
