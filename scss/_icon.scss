@@ -31,9 +31,7 @@
 	padding-left:90px;
 
 	@media screen and (max-width:991px){
-		&{
-			padding-left:50px
-		}
+		padding-left:50px
 	}
 }
 
@@ -41,7 +39,6 @@
 	position:relative;
 	display:block;
 	fill:#000;
-	-webkit-transition:fill .5s cubic-bezier(.4,0,.2,1);
 	transition:fill .5s cubic-bezier(.4,0,.2,1)
 }
 .facebook-icon:hover,.instagram-icon:hover,.linkedin-icon:hover,.twitter-icon:hover,.whatsapp-icon:hover,.youtube-icon:hover{

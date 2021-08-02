@@ -6,20 +6,18 @@
 	bottom:50px;
 	transform:translateX(-50%);
 	cursor:pointer;
-	z-index:100;
-
-	@media screen and (max-height:450px){
-		&{
-			bottom:15px
-		}
-	}
-	@media screen and (max-width:991px){
-		&{
-			display:none
-		}
+	z-index:100
+}
+@media screen and (max-height:450px){
+	.mouse-wrapper{
+		bottom:15px
 	}
 }
-
+@media screen and (max-width:991px){
+	.mouse-wrapper{
+		display:none
+	}
+}
 .mouse{
 	position:relative;
 	z-index:100;
@@ -28,33 +26,30 @@
 	height:34px;
 	border-radius:100px;
 	background-size:100% 200%;
-	animation:colorSlide 8s linear infinite,nudgeMouse 8s ease-out infinite;
-
-	&:after,.mouse:before{
-		content:"";
-		position:absolute;
-		top:0;
-		right:0;
-		bottom:0;
-		left:0;
-		margin:auto
-	}
-	&:before{
-		width:16px;
-		height:30px;
-		background-color:#e5e5e5;
-		border-radius:100px
-	}
-	&:after{
-		background-color:#000;
-		width:4px;
-		height:4px;
-		border-radius:100%;
-		animation:trackBallSlide 8s linear infinite
-	}
+	animation:colorSlide 8s linear infinite,nudgeMouse 8s ease-out infinite
 }
-
-
+.mouse:after,.mouse:before{
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto
+}
+.mouse:before{
+	width:16px;
+	height:30px;
+	background-color:#e5e5e5;
+	border-radius:100px
+}
+.mouse:after{
+	background-color:#000;
+	width:4px;
+	height:4px;
+	border-radius:100%;
+	animation:trackBallSlide 8s linear infinite
+}
 @-webkit-keyframes colorSlide{
 	0%{
 		background-position:0 100%
@@ -139,7 +134,6 @@
 		background-color:#000
 	}
 }
-
 @-webkit-keyframes trackBallSlide{
 	0%{
 		opacity:1;
@@ -202,7 +196,6 @@
 		transform:scale(1) translateY(-6px)
 	}
 }
-
 @keyframes trackBallSlide{
 	0%{
 		opacity:1;
@@ -265,7 +258,6 @@
 		transform:scale(1) translateY(-6px)
 	}
 }
-
 @-webkit-keyframes nudgeMouse{
 	0%{
 		transform:translateY(0)
